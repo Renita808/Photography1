@@ -1,4 +1,4 @@
-.album_cover {
+.album_cover, .photo_list, .album_nature {
   width: 100%;
   border: 10px solid gray;
   color: black;
@@ -6,17 +6,14 @@
   margin: 10px;
   padding: 10px;
 }
-.photo_list {
-  width: 100%;
-  max-height: 200px;
-  padding: 10px;
+.album_cover:hover, .photo_list:hover, .album_nature:hover, .homePhoto:hover {
+  border: 10px solid #646669;
 }
+
 .single_photo {
-  width: 75%;
-}
-.graffiti:hover {
-  border: 2px solid black
+  width: 100%;
 }
 .homePhoto {
-max-width: 100%
+max-width: 100%;
+border: 10px solid gray;
 }
