@@ -1,3 +1,18 @@
+// $(".photo_list").on("click", function(e){
+//   $(".photo_list").hide();
+//   $("#fullScreen").show();
+//   $("largeImg").attr("src", (this).attr("src"))
+// });
+
+// $(".photo_list").on("click", function(e){
+//     var loc = $(this).attr("src")
+//     $(".photo_list").hide();
+//     $("#fullScreen").show();
+//     $("largeImg").attr("src", loc)
+// });
+
+
+
 //   let photoList = $(".photo_list")
 //
 //   $(".photo_list").on("click", function({
@@ -30,7 +45,7 @@
 // if (targetElement.tagName === "img"){
 // document.getElementById(".single_photo").src = targetElement.getAttribute("src")
 // }
-// 
+//
 // $(document).ready(function(e){
 //   $(".photo_list").click(function(e){
 //     console.log("It works!")

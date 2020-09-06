@@ -50,44 +50,45 @@
       <div class="row">
 
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_1.jpg" alt="black bird on pole"/></a>
+        <img class="photo_list" src="images/img_1.jpg" alt="black bird on pole"/>
       </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_2.jpg"  alt="log cabin"/></a>
+        <img class="photo_list" src="images/img_2.jpg"  alt="log cabin"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_3.jpg" alt="Dandilion"/></a>
+        <img class="photo_list" src="images/img_3.jpg" alt="Dandilion"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_4.jpg" alt="Sun shining through palm trees"/></a>
+        <img class="photo_list" src="images/img_4.jpg" alt="Sun shining through palm trees"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_5.jpg" alt="Goose close up"/></a>
+        <img class="photo_list" src="images/img_5.jpg" alt="Goose close up"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_6.jpg" alt="Flower"/></a>
+        <img class="photo_list" src="images/img_6.jpg" alt="Flower"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_7.jpg" alt="Dog sniffing plant"/></a>
+        <img class="photo_list" src="images/img_7.jpg" alt="Dog sniffing plant"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_8.jpg" alt="Humming Bird"/></a>
+        <img class="photo_list" src="images/img_8.jpg" alt="Humming Bird"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_9.jpg" alt="Red humming bird"/></a>
+        <img class="photo_list" src="images/img_9.jpg" alt="Red humming bird"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_10.jpg" alt="White pelican s"/></a>
+        <img class="photo_list" src="images/img_10.jpg" alt="White pelican s"/>
         </div>
       <div class="col-xs-6 col-md-3">
-        <a href="photo1.html"><img class="photo_list" src="images/img_11.jpg" alt="Long horn sheep"/></a>
+        <img class="photo_list" src="images/img_11.jpg" alt="Long horn sheep"/>
         </div>
         <div class="col-xs-6 col-md-3">
-          <a href="photo1.html"><img class="photo_list" src="images/img_12.jpg" alt="fireplace"/></a>
+          <img class="photo_list" src="images/img_12.jpg" alt="fireplace"/>
           </div>
+        <div id="fullScreen"><img id="largeImg" src="" alt=""/>
+        </div>
     </div> <!--end of "row"-->
-    <div id="fullScreen">
-    </div>
+
     </div> <!--end of container -->
     <script
     src="https://code.jquery.com/jquery-3.5.1.js"
@@ -96,5 +97,15 @@
     <script src="js/bootstrap.min.js"></script> <!-- bootsrap libraries -->
     <script src="js/photography.js"></script> <!-- my javascript -->
 
+    <script>
+
+      $('.photo_list').on('click', function(){
+        var loc = $(this).attr('src');
+        $('#largeImg').attr('src', loc);
+        $('.photo_list').hide();
+        $('#fullScreen').show();
+    });
+
+</script>
   </body>
 </html>
