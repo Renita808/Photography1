@@ -19,8 +19,13 @@ border: 10px solid gray;
 }
 #fullScreen {
   max-width: 100%;
-  height: 600px;
+  height: 800px;
   border: 10px solid gray;
   overflow:scroll;
   display: none;
+}
+h2 {
+  font-size: 1em;
+  margin: 15px 0 0 10px;
+  text-align: center;
 }
